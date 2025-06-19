@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Bilgilerimi Göster</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div class="kutu">
+        <h1>Merhaba Oğuzhan</h1>
+        <p>Butona basınca bilgilerin gözükecek.</p>
+        <button onclick="bilgileriGoster()">Bilgilerimi Göster</button>
+
+        <!-- Bilgilerin gösterileceği alan -->
+        <div id="bilgi" class="bilgi-kutusu" style="display: none;">
+            <p><strong>Ad:</strong> Oğuzhan</p>
+            <p><strong>Soyad:</strong> Tanrıverdi</p>
+            <p><strong>E-posta:</strong> oguzhan@example.com</p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function bilgileriGoster() {
+            document.getElementById("bilgi").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
